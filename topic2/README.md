@@ -129,9 +129,7 @@ Retention policies specify how long different categories of data must, or may, b
 
 - the longer sensitive data is retained, the greater the potential impact if it is ever breached.
 
-When data reaches the end of its useful and legally required life, it should be disposed of through a ### controlled, documented, and secure process
-
-- not simply left to accumulate indefinitely. Secure disposal may involve cryptographic erasure, physical destruction of storage media, or certified deletion procedures, depending on the sensitivity of the data.
+When data reaches the end of its useful and legally required life, it should be disposed of through a controlled, documented, and secure process not simply left to accumulate indefinitely. Secure disposal may involve cryptographic erasure, physical destruction of storage media, or certified deletion procedures, depending on the sensitivity of the data.
 
 ## 2.7 Extended Case Study: Lifecycle of a Patient Health Record
 
