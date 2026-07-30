@@ -34,7 +34,7 @@
 
 ---
 
-![Koishi Koishi](https://media1.tenor.com/m/FPUAHqmQKP4AAAAd/koishi-komeiji-touhou.gif)
+![Koishi Koishi](./koishi-komeiji-touhou.gif)
 
 > Koishi Koishi
 
