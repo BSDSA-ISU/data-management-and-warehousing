@@ -16,6 +16,18 @@
     - [Two concepts are essential to understanding a data journey](#two-concepts-are-essential-to-understanding-a-data-journey)
   - [1.4 Why the Data Journey Matters](#14-why-the-data-journey-matters)
   - [1.5 Types and Sources of Data Entering the Journey](#15-types-and-sources-of-data-entering-the-journey)
+  - [1.6 Stakeholders Along the Data Journey](#16-stakeholders-along-the-data-journey)
+  - [1.7 The Data Journey Versus the Data Value Chain](#17-the-data-journey-versus-the-data-value-chain)
+  - [1.8 Common Challenges Along the Data Journey](#18-common-challenges-along-the-data-journey)
+    - [Data silos](#data-silos)
+    - [Loss of context](#loss-of-context)
+    - [Format incompatibility](#format-incompatibility)
+    - [Latency](#latency)
+    - [Security exposure](#security-exposure)
+    - [1.9 Illustrative Example](#19-illustrative-example)
+  - [1.10 Extended Case Study: A Student Enrollment Journey](#110-extended-case-study-a-student-enrollment-journey)
+  - [1.11 Review Questions](#111-review-questions)
+  - [GO to topic 2](#go-to-topic-2)
 
 ![Alice](https://media.tenor.com/q_2ybfXh_j8AAAAi/alice-margatroid.gif)
 
@@ -114,3 +126,77 @@ Data enters an organization's journey from many different kinds of sources, and 
 | Machine-Generated Data | Data automatically produced by devices, applications, or systems without direct human entry. | IoT sensor readings, server logs, GPS data |
 
 Recognizing these categories early matters because structured data can usually move directly into databases, while unstructured and semi-structured data typically require extra processing — such as parsing, tagging, or the use of specialized storage like a data lake — before they can be meaningfully integrated with the rest of an organization's data.
+
+## 1.6 Stakeholders Along the Data Journey
+
+A data journey is never purely technical; it is also organizational. Different people are responsible for data at different points, and confusion about who owns a stage is one of the most common causes of data problems. The table below outlines typical roles.
+
+| Role | Responsibility Along the Data Journey |
+| :--- | :--- |
+| Data Producer / Source Owner | Generates or captures the original data and is responsible for its initial accuracy. |
+| Data Steward | Oversees the quality, definition, and proper use of data within a specific domain, acting as the accountable custodian. |
+| Data Engineer | Builds and maintains the technical pipelines that move, transform, and store data. |
+| Data Analyst / Scientist | Consumes data to generate insight, reports, or predictive models. |
+| Data Governance Officer | Defines the policies, standards, and compliance requirements that apply across the entire journey. |
+| End User / Decision-Maker | Relies on the final, processed data to make operational or strategic decisions. |
+
+## 1.7 The Data Journey Versus the Data Value Chain
+
+The data journey is closely related to, but distinct from, the idea of a data value chain. A data value chain focuses specifically on how value is added to data at each stage — for example, raw sensor readings have little value on their own, but once aggregated, analyzed, and visualized in a dashboard, they can directly inform a business decision. The data journey is the broader map of movement and transformation; the value chain is the lens that asks, "What value did this stage add?" Thinking in terms of value helps organizations decide which stages of the journey are worth investing in and which may be unnecessary overhead.
+
+## 1.8 Common Challenges Along the Data Journey
+
+### Data silos
+
+data trapped in one department's systems, inaccessible to the rest of the organization, breaking the journey before it can reach other users.
+
+### Loss of context
+
+as data moves between systems, the meaning of a field can get lost if it is not well documented (for example, does "amount" mean before or after tax?).
+
+### Format incompatibility
+
+different systems may  use incompatible file formats, encodings, or field structures, requiring conversion at each handoff.
+
+### Latency
+
+delays introduced at any stage of the journey can make data stale by the time it reaches its final consumer.
+
+### Security exposure
+
+every additional stop along the journey is a potential point of unauthorized access if not properly secured.
+
+### 1.9 Illustrative Example
+
+Consider a single retail transaction. A customer purchase is captured at a point-of-sale terminal (creation). That record is transmitted to a central transaction database (ingestion and storage). Overnight, a batch job aggregates the day's transactions and loads them into a data warehouse (processing and integration).
+
+The following morning, a sales dashboard queries the warehouse so the store manager can review yesterday's performance (consumption).
+
+After seven years, in line with the company's retention policy, the detailed transaction record is moved to cold storage and eventually deleted (archival and disposal).
+
+## 1.10 Extended Case Study: A Student Enrollment Journey
+
+To see how many stakeholders and stages a single journey can involve, consider how one piece of data — a student's enrollment status — travels through a university.
+
+1. A prospective student submits an online application (creation, by the data producer).
+2. The admissions system ingests the application and stores it in the admissions database (ingestion and storage).
+3. An admissions officer reviews and updates the application status (processing, by a data steward).
+4. Once accepted, the student's record is transferred into the official student information system (movement and integration, by data engineers).
+5. The registrar's office, finance office, and academic departments all query this record for their own purposes (consumption, by multiple end users).
+6. Years after graduation, the enrollment record is archived according to the university's retention schedule (archival, governed by policy).
+
+This example shows that even a single, seemingly simple data point passes through many hands, systems, and transformations — which is exactly why understanding the data journey is foundational to responsible data management.
+
+## 1.11 Review Questions
+
+1. In your own words, define the data journey and explain how it differs from a simple technical data flow diagram.
+2. What is the difference between data provenance and data lineage?
+3. Name three stakeholders involved in a typical data journey and describe their responsibilities.
+4. Why does unstructured data often require more processing than structured data before it can be integrated?
+5. Describe one risk that can occur at each of three different stages of the data journey.
+
+> Discussion: Choose an everyday digital action (e.g., posting on social media, using a ride-hailing app). Trace its data journey through as many stages as you can identify, and name at least two stakeholders involved.
+
+## GO to topic 2
+
+[Topic 2](../topic2/)
