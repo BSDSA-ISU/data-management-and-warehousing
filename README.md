@@ -18,5 +18,5 @@
 
 ## Activities
 
-- **Lab:**
+- **Lab**
   - [Lab 1](./Lab1/)

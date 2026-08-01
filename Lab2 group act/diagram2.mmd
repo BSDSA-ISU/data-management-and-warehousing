@@ -1,0 +1,57 @@
+flowchart TD
+    %% Custom Styling
+    classDef stage fill:#f9f9f9,stroke:#333,stroke-width:2px;
+    classDef risk fill:#ffe6e6,stroke:#ff4d4d,stroke-width:1px;
+    classDef solution fill:#e6f7ff,stroke:#1890ff,stroke-width:1px;
+
+    %% Collection Stage
+    subgraph Collection ["1. Collection (User Data)"]
+        A[PII User Data Collected] --> A_Controls["• Enforce strict IAM controls<br>• Multifactor authentication (MFA)<br>• Encrypt all data at rest"]
+    end
+    class Collection stage;
+
+    %% Processing Stage
+    subgraph Processing ["2. Processing"]
+        B_Risk[/"⚠️ Risk: Format incompatibility or data corruption during ETL processing"/]
+        B_Sol["💡 Solution: Implement strict schema validation & automated data quality checks"]
+        B_Risk --> B_Sol
+    end
+    class Processing stage;
+    class B_Risk risk;
+    class B_Sol solution;
+
+    %% Integration Stage
+    subgraph Integration ["3. Integration"]
+        C_Risk[/"⚠️ Risk: Data silos causing a fragmented view of the user across Google services"/]
+        C_Sol["💡 Solution: Consolidate into a centralized data lake/warehouse with unified naming conventions & primary keys"]
+        C_Risk --> C_Sol
+    end
+    class Integration stage;
+    class C_Risk risk;
+    class C_Sol solution;
+
+    %% Consumption Stage
+    subgraph Consumption ["4. Consumption"]
+        D_Risk[/"⚠️ Risk: Loss of context, leading creators to misinterpret analytics"/]
+        D_Sol["💡 Solution: Provide clear data dictionaries, tooltips, & educational resources in YouTube Studio"]
+        D_Risk --> D_Sol
+    end
+    class Consumption stage;
+    class D_Risk risk;
+    class D_Sol solution;
+
+    %% Archival Stage
+    subgraph Archival ["5. Archival"]
+        E_Risk[/"⚠️ Risk: Accidentally retaining user data longer than legally permitted (Privacy violation)"/]
+        E_Sol["💡 Solution: Automate data lifecycle management policies to purge or anonymize data after retention period"]
+        E_Risk --> E_Sol
+    end
+    class Archival stage;
+    class E_Risk risk;
+    class E_Sol solution;
+
+    %% Flow Connections
+    Collection --> Processing
+    Processing --> Integration
+    Integration --> Consumption
+    Consumption --> Archival

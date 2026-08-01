@@ -1,0 +1,31 @@
+flowchart LR
+    A[Use]
+    B[Processing]
+    C[Integration]
+    D[Consumption]
+    E[Archival]
+
+    A --> B --> C --> D --> E
+
+    A --> A1["Risk:<br/>PII exposure"]
+    A1 --> A2["Mitigation:<br/>• Enforce strict IAM<br/>• Multifactor Authentication (MFA)<br/>• Encrypt data at rest"]
+
+    B --> B1["Risk:<br/>Format incompatibility<br/>or data corruption during ETL"]
+    B1 --> B2["Mitigation:<br/>• Strict schema validation<br/>• Automated data quality checks"]
+
+    C --> C1["Risk:<br/>Data silos create fragmented user views across Google services"]
+    C1 --> C2["Mitigation:<br/>• Centralized data lake/warehouse<br/>• Unified naming conventions<br/>• Consistent primary keys"]
+
+    D --> D1["Risk:<br/>Creators misinterpret analytics due to loss of context"]
+    D1 --> D2["Mitigation:<br/>• Data dictionaries<br/>• Tooltips<br/>• Educational resources in YouTube Studio"]
+
+    E --> E1["Risk:<br/>Retaining user data longer than legally permitted"]
+    E1 --> E2["Mitigation:<br/>• Automated lifecycle management<br/>• Automatic purge or anonymization after retention period"]
+
+    classDef stage fill:#D6EAF8,stroke:#2E86C1,stroke-width:2px;
+    classDef risk fill:#FADBD8,stroke:#C0392B,stroke-width:1px;
+    classDef mitigation fill:#D5F5E3,stroke:#239B56,stroke-width:1px;
+
+    class A,B,C,D,E stage;
+    class A1,B1,C1,D1,E1 risk;
+    class A2,B2,C2,D2,E2 mitigation;
