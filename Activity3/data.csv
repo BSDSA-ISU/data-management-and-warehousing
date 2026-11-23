@@ -1,0 +1,31 @@
+Student_ID,Student_Name,Program,Gender,Age,Email,Last_Updated,Status,Campus
+1001,Juan Dela Cruz,BSIT,Male,20,juan.delacruz@gmail.com,2026-08-10,Active,Echague
+1002,Maria Santos,BSDS,Female,21,maria.santos@gmail.com,2026-08-10,Active,Santiago
+1003,Pedro Reyes,BSCS,M,20,pedro.reyes@gmail.com,2026-08-09,Active,Ilagan
+1004,Ana Garcia,BSIT,Female,19,ana.garcia@gmail.com,2026-08-08,Active,Echague
+1005,Carlos Mendoza,BSDS,Male,22,carlos.mendoza@gmail.com,2026-08-07,Active,Cauayan
+1006,Liza Ramos,BSIT,female,20,liza.ramos@gmail.com,2026-08-10,Active,Santiago
+1007,Mark Aquino,BSCS,Male,-3,mark.aquinogmail.com,2026-08-10,Active,Ilagan
+1008,Sofia Torres,BSIT,Female,19,sofia.torres@gmail.com,,Active,Echague
+1009,Ramon Flores,BSDS,Male,21,ramon.flores@gmail.com,2026-08-10,Active,Echague
+1010,Ella Navarro,BSCS,Female,20,ella.navarro@gmail.com,2026-08-10,Active,Cauayan
+1011,John Lim,BSIT,Male,23,john.lim@gmail.com,2026-08-01,Active,Ilagan
+1012,Grace Tan,BSDS,Female,20,grace.tan@gmail.com,2026-08-10,active,Santiago
+1013,Kevin Yu,BSCS,Male,21,kevin.yu@gmail.com,2026-08-10,Active,Ilagan
+1014,Nina Cruz,BSIT,Female,19,nina.cruz@gmail.com,2026-08-10,Active,Echague
+1015,Paul Bautista,BSDS,Male,20,paul.bautista@gmail.com,2026-08-10,Active,Cauayan
+1016,Angela Diaz,BSIT,Female,21,angela.diaz@gmail.com,2026-08-10,Active,Santiago
+1017,Jose Ramirez,BSCS,Male,20,jose.ramirez@gmail.com,2026-08-10,Active,Ilagan
+1018,Mia Castillo,BSIT,Female,22,mia.castillo@gmail.com,2026-08-10,Active,Echague
+1019,Daniel Perez,BSDS,Male,21,daniel.perez@gmail.com,2026-08-10,Active,Santiago
+1020,Karen Lopez,BSCS,Female,20,karen.lopez@gmail.com,2026-08-10,Active,Cauayan
+1021,John Lim,BSIT,Male,23,john.lim@gmail.com,2026-08-10,Active,Ilagan
+1022,Robert Ong,BSIT,Male,25,,2026-08-10,Active,Echague
+1023,Patricia Lee,BSDS,Female,20,patricia.lee@gmail.com,2026-08-10,Inactive,Santiago
+1024,Samuel Go,BSCS,Male,19,samuel.go@gmail.com,2026-08-10,Active,Ilagan
+1025,Diana Chua,BSIT,Female,20,diana.chua@gmail.com,2026-08-10,Active,Echague
+1026,Michael Sy,BSDS,Male,21,michael.sy@gmail.com,2026-08-10,Active,Cauayan
+1027,Rachel Ong,BSCS,Female,20,rachel.ong@gmail.com,2026-08-10,Active,Santiago
+1028,Andrew Lim,BSIT,Male,20,andrew.lim@gmail.com,2026-08-10,Active,Ilagan
+1029,Christine Tan,BSDS,Female,21,christine.tan@gmail.com,2026-08-10,Active,Echague
+1030,Brian Choi,BSCS,Male,20,brian.choi@gmail.com,2026-08-10,Active,Cauayan

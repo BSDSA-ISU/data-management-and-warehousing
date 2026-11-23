@@ -1,0 +1,14 @@
+Row,Column,Dimension,Description,Value
+3,Program,Integrity,Program 'BSDS' does not match allowed program codes,BSDS
+4,Gender,Consistency,"Inconsistent format (use full name e.g., 'Male' instead of abbreviation)",M
+6,Program,Integrity,Program 'BSDS' does not match allowed program codes,BSDS
+8,Age,Validity,Age is out of realistic range (15-100) or not an integer,-3
+8,Email,Validity,Invalid email address format,mark.aquinogmail.com
+10,Program,Integrity,Program 'BSDS' does not match allowed program codes,BSDS
+13,Program,Integrity,Program 'BSDS' does not match allowed program codes,BSDS
+16,Program,Integrity,Program 'BSDS' does not match allowed program codes,BSDS
+20,Program,Integrity,Program 'BSDS' does not match allowed program codes,BSDS
+23,Email,Completeness,Required field 'Email' is blank,
+24,Program,Integrity,Program 'BSDS' does not match allowed program codes,BSDS
+27,Program,Integrity,Program 'BSDS' does not match allowed program codes,BSDS
+30,Program,Integrity,Program 'BSDS' does not match allowed program codes,BSDS
